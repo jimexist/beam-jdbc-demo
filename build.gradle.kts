@@ -33,6 +33,8 @@ repositories {
 }
 
 dependencies {
+    compileOnly("com.google.auto.value:auto-value-annotations:1.8.2")
+    annotationProcessor("com.google.auto.value:auto-value:1.8.2")
     // https://mvnrepository.com/artifact/org.apache.beam/beam-sdks-java-core
     implementation(group = "org.apache.beam", name = "beam-sdks-java-core", version = "2.31.0")
     // https://mvnrepository.com/artifact/org.apache.beam/beam-runners-direct-java
